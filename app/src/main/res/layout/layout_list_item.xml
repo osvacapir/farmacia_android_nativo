@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name_com"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_toEndOf="@+id/txt_id"
+                    android:gravity="left"
+                    android:text="Nome Comercial"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/txt_name_cie"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentEnd="false"
+                    android:gravity="left|center_vertical"
+                    android:text="Descrição Cientifica"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/rel1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginRight="2dp"
+                android:gravity="right|center_vertical"
+                android:text="Preço"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_price"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bt_edtit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:padding="0dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@mipmap/edit"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/bt_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@null"
+                    android:padding="0dp"
+                    android:src="@mipmap/delet"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

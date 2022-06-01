@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/banner" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="377dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="7dp"
+            android:background="#CCCC"
+            android:gravity="center_vertical|center_vertical">
+
+            <ImageButton
+                android:id="@+id/btNovo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@mipmap/new_record" />
+
+            <TextView
+                android:id="@+id/tvBtNovo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/btNovo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center
+"
+                android:text="Novo Artigo"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="7dp"
+            android:background="#CCCC"
+            android:gravity="center_vertical|center_horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/btLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@mipmap/list_lg" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/btLista"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center
+"
+                android:text="Lista de Artigos"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="377dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="7dp"
+            android:background="#CCCC"
+            android:gravity="center_vertical|center_vertical">
+
+            <ImageButton
+                android:id="@+id/btNovoUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@mipmap/user" />
+
+            <TextView
+                android:id="@+id/tvBtNovoUser"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/btNovoUser"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center"
+                android:text="Novo Utilizador"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="7dp"
+            android:background="#CCCC"
+            android:gravity="center_vertical|center_horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/imgPesquisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@mipmap/list_lg" />
+
+            <TextView
+                android:id="@+id/tvPesquis"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/imgPesquisa"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center
+"
+                android:text="Lista de Artigos"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout-->
+
+    <TextView
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCC"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/app_auth"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintVertical_bias="0.622" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

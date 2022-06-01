@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Prova ANDROID I</string>
+    <string name="app_auth">Este Aplicativo é um trabalho que serviu como prova do Módulo ANDROID 1, construido pelo mestrando OSVALDO ADRIANO CAPIR, no dia 19 de Maio de 2022 </string>
+    <string name="title_activity_novo_artigo">Registar Artigo</string>
+    <string name="hint_nome_comercial">Nome Comercial</string>
+    <string name="hint_nome_cientifico">Nome Científico</string>
+    <string name="hint_data_fabri">Fabricado em...</string>
+    <string name="hint_data_validade">Válido Até...</string>
+    <string name="hint_prod_id">Código/ID do Produto</string>
+    <string name="hint_prod_preco">Quanto custa?</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
